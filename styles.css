@@ -1,0 +1,301 @@
+*,*::after, *::before{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #E5E5E5;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 90%;
+    margin:0px auto;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    
+}
+.logo{
+    height: 80px;
+    width: 80px;
+    background-image: linear-gradient(to right, white, grey);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+
+}
+ .logo p{
+     transform: rotate(-30deg);
+     color: white;
+     text-decoration: underline;
+     text-decoration-color:orange;
+     text-decoration-thickness: 5px;
+     
+ }
+ /* .mary{
+     color: blue;
+     text-decoration: underline;
+     text-decoration-color: blanchedalmond;
+     text-decoration-thickness: 5px;
+ }
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin: 30px 0px;
+    text-align: right;
+
+
+}
+.menu ul li{
+    font-family: century;
+    font-size: 1,1rem;
+    font-weight:bold ;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    padding: 15px 40px;
+    transition: all ;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.menu ul li a:hover{
+    color:red;
+}
+
+ .content{
+   background-image: url("images/pizza1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80vh;  
+}
+
+
+.content p{
+    font-family: sans-serif;
+    font-size: 30px;
+    color:black;
+    letter-spacing: 5px;
+    text-align: left;
+    padding-top: 480px;
+    text-transform: uppercase;
+    
+}
+.content p:hover{
+    color: red;
+}
+#logo{
+    height: 1px;
+}
+#btn{
+    float:center;
+    text-transform: uppercase;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    
+}      
+
+.fa {
+    padding: 20px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    display: inline;
+    padding: 40px;
+    margin-top: 15px;
+  
+}
+   
+.fa:hover {
+    color: orange;
+}
+.footer{
+    text-align: center;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    background-color:white;
+    color: black;
+    margin-top: 0.1%;
+}
+.footer p{
+  margin-bottom: 20px;
+}
+
+/* about */
+#home{
+    background-attachment: fixed;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    background-image:url("./images/pizza4.jpg");    
+
+}
+
+    
+#home p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size:15px;
+}
+#home h2{
+    text-align: center;
+    color: white;
+}
+#btn{
+    justify-content: center;
+    display: flex;
+    margin-left: 40%;
+    margin-top: 15%;
+    padding: 20px 40px;
+    font-size: 30px;
+
+}
+#btn:hover{
+    background-color: orange;
+    color:white;
+}
+#home a{
+    text-decoration: none;
+}
+/* order */
+/* #menu {
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.menu-overlay {
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.selection{
+    background: grey;
+    background-size: cover;
+    padding: 100px;
+    color: black;
+    margin:50px;
+  }
+.order h2{
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: auto;
+    margin:10px ;
+}
+.wiggle{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+}
+.wiggle img:hover{
+    transform: scale(0.9);
+    transition: .6s ease-in-out;
+}
+.location{
+    display: none;
+}
+
+.purchase{
+    margin:10px
+}
+.deliveryForm{
+    margin: 20px;
+    padding: 10px;
+}
+
+.result{
+   height: 20vh;
+   width: 30vw;
+   background-color: rgba(255,255,255, .6);
+   display: flex;
+   justify-content: center;
+   margin-bottom: 5px;
+   padding: 5px;
+}
+
+.checkout{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+
+/* contacts */
+/* .contact-section{
+    background: grey;
+    background-size: cover;
+    padding: 40px 0;
+    color: black;
+    margin-top: 5%; margin-top: 2%; margin-left: 1%; margin-right: 1%;
+  }
+  
+  .contact-section h1{
+    text-align: center;
+    text-decoration-line: underline;
+  
+  }
+
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+   .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background-color: rgb(230, 230, 230);
+    color: black;
+    padding: 20px 40px;
+    outline: none;
+    transition: 0.5s;
+  }
+  .contact-form-text:hover{
+    background: none;
+    border: 2px solid black;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .contact-form-btn{
+    float: right;
+    border: 0;
+    background: black;
+    color: white;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .contact-form-btn:hover{
+    background: blue;
+  }        */
