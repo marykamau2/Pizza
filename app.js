@@ -4,15 +4,11 @@ $(document).ready(function () {
             $(".purchase").click(function () {
                 var topping = $("#topping  option:selected").val()
                 var crust = $("#crust  option:selected").val();
-                var location = $("#location option:selected").val()
+                var place = $("#place").val()
                 var price = $("input[type='checkbox']").val();
                 var size = $("#size  option:selected").val();
                 var quantity = $(".quantity").val();
-                // if(price==="big"){
-                //     var value = 1200;
-                //     $("#output").text(`Your cost is: ${value} and your pizza will be delivered to ${location.text()}`).addClass('output')
-
-                // }
+                
 
                 function quantityChanged() {
 
@@ -49,7 +45,7 @@ $(document).ready(function () {
                     price = 0;
                 }
 
-                var totalCost = quantity * (price + crustPrice);
+                var totalCost = quantity * (price + crustPrice) ;
                 var overalCost = parseInt(totalCost)
 
                 $(".cart").append(
@@ -58,7 +54,7 @@ $(document).ready(function () {
                     <td>${size}</td>
                     <td>${topping}</td>
                     <td>${crust}</td>
-                    <td>${location}</td>
+                    <td>${place}</td>
                     <td>${quantity}</td>
                     <td>${overalCost}</td>
                     <td><button class="btn remove">remove</button></td>
@@ -91,9 +87,17 @@ $(document).ready(function () {
 
 
                 })
+                
+$(document).ready(function(){
+    $("button").click(function(){
+        var location= $("#place").val();
+        alert("Good news we dont charge deliveries!!We will deliver to " + location);
+
+        $(".toggle").show();
+      });
 
 
             })
 
         })
-    
+})

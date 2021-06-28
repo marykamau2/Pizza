@@ -1,31 +1,35 @@
-*,*::after, *::before{
+*,
+*::after,
+*::before {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     background-color: #E5E5E5;
     margin: 0px;
     box-sizing: border-box;
-    
+
 }
-.container{
+
+.container {
     width: 90%;
-    margin:0px auto;
+    margin: 0px auto;
 }
 
 
-.nav{
+.nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:black;
+    background-color: black;
     position: sticky;
     top: 0;
     height: 70px;
-    
+
 }
-.logo{
+
+.logo {
     height: 80px;
     width: 80px;
     background-image: linear-gradient(to right, white, grey);
@@ -36,21 +40,24 @@ body{
     margin-left: 5px;
 
 }
- .logo p{
-     transform: rotate(-30deg);
-     color: white;
-     text-decoration: underline;
-     text-decoration-color:orange;
-     text-decoration-thickness: 5px;
-     
- }
-  .mary{
-     color: blue;
-     text-decoration: underline;
-     text-decoration-color: blanchedalmond;
-     text-decoration-thickness: 5px;
- }
-.menu ul{
+
+.logo p {
+    transform: rotate(-30deg);
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 5px;
+
+}
+
+.mary {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: blanchedalmond;
+    text-decoration-thickness: 5px;
+}
+
+.menu ul {
     display: flex;
     list-style: none;
     margin: 30px 0px;
@@ -58,58 +65,70 @@ body{
 
 
 }
-.menu ul li{
+
+.menu ul li {
     font-family: century;
-    font-size: 1,1rem;
-    font-weight:bold ;
+    font-size: 1, 1rem;
+    font-weight: bold;
 }
-.menu ul li a{
+
+.menu ul li a {
     text-decoration: none;
-    color:whitesmoke;
+    color: whitesmoke;
     padding: 15px 40px;
-    transition: all ;
+    transition: all;
     letter-spacing: 1px;
     cursor: pointer;
     text-transform: uppercase;
 }
-.menu ul li a:hover{
-    color:red;
+
+
+.menu ul li a:hover {
+    color: red;
 }
 
- .content{
-   background-image: url("images/pizza1.jpg");
+.content {
+    background-image: url("images/pizza1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 120vh;  
+    height: 100vh;
+    float: right;
 }
 
 
-.content p{
+.content p {
     font-family: sans-serif;
     font-size: 30px;
-    color:black;
+    color: black;
     letter-spacing: 5px;
     text-align: left;
-    padding-top: 480px;
+    padding-top: 600px;
     text-transform: uppercase;
     
+
 }
-.content p:hover{
+
+.content p:hover {
     color: red;
 }
-#logo{
+
+#logo {
     height: 1px;
 }
-#btn{
-    float:inline-end;
+
+#btn {
+    float: inline-end;
     text-transform: uppercase;
     cursor: pointer;
     font-family: sans-serif;
     font-weight: 200;
-    font-size: 20px;   
-}      
+    font-size: 20px;
+    justify-content: center;
+    text-align: right;
+    
+}
 
 .fa {
     padding: 20px;
@@ -117,31 +136,33 @@ body{
     width: 50px;
     text-align: center;
     text-decoration: none;
-    color:black;
+    color: black;
     display: inline;
     padding: 40px;
     margin-top: 15px;
-  
+
 }
-   
+
 .fa:hover {
     color: orange;
 }
-.footer{
+
+.footer {
     text-align: center;
     padding-bottom: 5px;
     box-sizing: border-box;
-    background-color:white;
+    background-color: white;
     color: black;
     margin-top: 0.1%;
 }
-.footer p{
-  margin-bottom: 20px;
+
+.footer p {
+    margin-bottom: 20px;
 }
 
 
 /* order */
- #menu {
+#menu {
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
@@ -152,111 +173,130 @@ body{
 }
 
 
-.selection{
+.selection {
     background: grey;
     background-size: cover;
-    padding: 50px;
+    padding: 40px;
     color: black;
-    margin:0px auto;
+    margin: 0px auto;
     width: 90%;
+    align-items: center;
 
-  }
-.arrange{
-    background: grey;
-    background-size: cover;
-    padding: 100px;
-    margin: auto;
-    width: 90%;
-}
-.show{
-    background: grey;
-    background-size: cover;
-    padding: 100px;
-    margin: auto;
-    width: 90%;
 }
 
-.row{
+.arrange {
     background: grey;
     background-size: cover;
-    padding: 100px;
+    padding: 40px;
     margin: auto;
     width: 90%;
-}
-.table{
-    background: grey;
-    background-size: cover;
-    padding: 100px;
-    margin: auto;
-    width: 90%; 
+    align-items: center;
 }
 
-.order h2{
+.show {
+    background: grey;
+    background-size: cover;
+    padding: 40px;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+}
+
+.row {
+    background: grey;
+    background-size: cover;
+    padding: 40px;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+}
+
+.table {
+    background: grey;
+    background-size: cover;
+    padding: 40px;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+}
+
+.order h2 {
     justify-content: center;
     text-align: center;
     color: red;
     width: auto;
-    margin:10px ;
+    margin: 10px;
 
 }
-.wiggle{
+
+.wiggle {
     height: 250px;
     width: 250px;
     margin: auto;
     text-align: center;
 }
-.wiggle img:hover{
+
+.wiggle img:hover {
     transform: scale(0.9);
     transition: .6s ease-in-out;
 }
 
 
-.purchase{
-    margin:10px
+.purchase {
+    margin: 10px
 }
-.deliveryForm{
+
+.deliveryForm {
     margin: 20px;
     padding: 10px;
 }
 
-.result{
-   height: 20vh;
-   width: 30vw;
-   background-color: rgba(255,255,255, .6);
-   display: flex;
-   justify-content: center;
-   margin-bottom: 5px;
-   padding: 5px;
+.result {
+    height: 20vh;
+    width: 30vw;
+    background-color: red;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    padding: 5px;
+    margin:  80px;
+
 }
 
-.checkout{
-   margin-top: 20px;
-   margin-bottom: 20px;
+.checkout {
+    margin-top: 20px;
+
+    margin-bottom: 20px;
 }
+
 
 
 /* contacts */
- .contact-section{
+.contact-section {
     background: grey;
     background-size: cover;
     padding: 40px 0;
     color: black;
-    margin-top: 5%; margin-top: 2%; margin-left: 1%; margin-right: 1%;
-  }
-  
-  .contact-section h1{
+    margin-top: 5%;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.contact-section h1 {
     text-align: center;
     text-decoration-line: underline;
-  
-  }
 
-  .contact-form{
+}
+
+.contact-form {
     max-width: 600px;
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
-  }
-   .contact-form-text{
+}
+
+/* .contact-form-text {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -267,16 +307,19 @@ body{
     padding: 20px 40px;
     outline: none;
     transition: 0.5s;
-  }
-  .contact-form-text:hover{
+}
+
+.contact-form-text:hover {
     background: none;
     border: 2px solid black;
-  }
-  textarea.contact-form-text{
+}
+
+textarea.contact-form-text {
     resize: none;
     height: 120px;
-  }
-  .contact-form-btn{
+}
+
+.contact-form-btn {
     float: right;
     border: 0;
     background: black;
@@ -284,8 +327,8 @@ body{
     padding: 12px 50px;
     border-radius: 20px;
     cursor: pointer;
-  }
-  
-  .contact-form-btn:hover{
+}
+
+.contact-form-btn:hover {
     background: blue;
-  }        
+} */
