@@ -319,7 +319,7 @@ textarea.contact-form-text {
     height: 120px;
 }
 
-/* .contact-form-btn {
+.contact-form-btn {
     float: right;
     border: 0;
     background: black;
@@ -331,4 +331,4 @@ textarea.contact-form-text {
 
 .contact-form-btn:hover {
     background: blue;
-}  */
+}  
